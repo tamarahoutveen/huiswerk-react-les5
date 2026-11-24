@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto+Condensed:wght@300&display=swap');
 
+:root {
+  --pastel-blue: #dbeafe;
+  --text-blue: #1e3a8a;
+  --pastel-green: #dcfce7;
+  --text-green: #14532d;
+  --pastel-red: #fee2e2;
+  --text-red: #7f1d1d;
+  --pastel-yellow: #fef9c3;
+  --text-yellow: #713f12;
+  --pastel-purple: #f3e8ff;
+  --text-purple: #581c87;
+  --pastel-grey: #e5e7eb;
+  --text-black: #111827;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#root{
+  width: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
