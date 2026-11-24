@@ -1,0 +1,18 @@
+.country-card {
+    background: var(--light-bg);
+    border:1px solid var(--text-black);
+    padding:20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    max-width:600px;
+}
+.country-card img{
+    width:150px;
+}
+.country-card-info{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
