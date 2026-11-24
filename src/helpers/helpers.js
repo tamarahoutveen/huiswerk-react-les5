@@ -22,5 +22,23 @@ export function getCountryColor(region) {
     }
 return countryColor;
 }
+export function formatPopulation(population) {
+
+    if (population >= 1000000000){
+        let billions = Math.round(population / 1000000);
+       billions = new Intl.NumberFormat("nl-NL", {
+           maximumFractionDigits: 0,
+       }).format(billions);
+       return `${billions} billion`;
+    }
+    else if (population >= 1000000){
+        const millions = Math.round(population / 1000000);
+        return `${millions} million`;
+    }
+
+    return new Intl.NumberFormat("nl-NL", {
+        maximumFractionDigits: 0,
+    }).format(population);
+}
 
 export default getCountryColor;
